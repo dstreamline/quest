@@ -44,7 +44,7 @@ if (isset($_GET['showMap'])) {
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<div>
+<div class="main-wrapper">
     <script type="text/javascript">
         function doClear(theText) {
             if (theText.value == theText.defaultValue) {
