@@ -1,0 +1,19 @@
+body
+{
+    background-color:#001900;
+}
+p
+{
+    font-family:"Times New Roman";
+    font-size:15px;
+    color: #FFFFFF;
+    line-height:0;
+}
+input[type=text]
+{
+
+}
+.nums
+{
+    type: text;
+}
