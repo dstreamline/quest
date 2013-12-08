@@ -1,11 +1,16 @@
-<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.nums').keypress(function (e) {
-            if (!(e.which == 8 || e.which == 44 || e.which == 45 || e.which == 46 || (e.which > 47 && e.which < 58))) return false;
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nums').keypress(function (e) {
+                if (!(e.which == 8 || e.which == 44 || e.which == 45 || e.which == 46 || (e.which > 47 && e.which < 58))) return false;
+            });
         });
-    });
-</script>
+    </script>
+</head>
+
 <?php
 $xGrads = "49";
 $xMins = "";
@@ -40,11 +45,16 @@ if (isset($_GET['showMap'])) {
     $showMap = strip_tags($_GET['showMap']);
 }
 ?>
+<<<<<<< HEAD
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
+=======
+
+
+>>>>>>> e168ccf0f63bb4b9e4186515891bbd0e23b3ddc9
 <div class="main-wrapper">
     <script type="text/javascript">
         function doClear(theText) {
