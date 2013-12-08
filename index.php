@@ -43,6 +43,7 @@ if (isset($_GET['showMap'])) {
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <div class="main-wrapper">
     <script type="text/javascript">
