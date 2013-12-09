@@ -1,6 +1,66 @@
 <html>
 <head>
+    <title>TD GeoHelper</title>
+    <link href="http://static.scripting.com/github/bootstrap2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://static.scripting.com/github/bootstrap2/js/jquery.js"></script>
+    <script src="http://static.scripting.com/github/bootstrap2/js/bootstrap-transition.js"></script>
+    <script src="http://static.scripting.com/github/bootstrap2/js/bootstrap-modal.js"></script>
+
+
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <link rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/js/google-code-prettify/prettify.css"/>
+    <!--    <link rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/css/docs.css" />-->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+
+    <style>
+        .divDemoBody {
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+        }
+
+        .divDemoBody p {
+            font-size: 18px;
+            line-height: 140%;
+            padding-top: 12px;
+        }
+
+        .divDialogElements input {
+            font-size: 18px;
+            padding: 3px;
+            height: 32px;
+            width: 200px;
+        }
+
+        .divButton {
+            padding-top: 12px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#windowTitleDialog').bind('show', function () {
+                document.getElementById("xlInput").value = document.title;
+            });
+        });
+        function closeDialog() {
+            $('#windowTitleDialog').modal('hide');
+        }
+        ;
+        function okClicked() {
+            document.title = document.getElementById("xlInput").value;
+            closeDialog();
+        }
+        ;
+    </script>
+
+
     <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -9,8 +69,50 @@
             });
         });
     </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                    center: [55.76, 37.64],
+                    zoom: 10
+                }),
+                myGeoObject = new ymaps.GeoObject({
+                    geometry: {
+                        type: "Point",
+                        coordinates: [55.8, 37.8]
+                    },
+                    properties: {
+                        iconContent: 'Метка',
+                        balloonContent: 'Меня можно перемещать'
+                    }
+                }, {
+                    preset: 'twirl#redStretchyIcon',
+                    draggable: true
+                }),
+                myPlacemark1 = new ymaps.Placemark([55.8, 37.6], {
+                    iconContent: '1',
+                    balloonContent: 'Балун',
+                    hintContent: 'Стандартный значок метки'
+                }, {
+                    preset: 'twirl#violetIcon'
+                });
+            myMap.geoObjects
+                .add(myPlacemark1)
+            myMap.controls
+                .add('zoomControl', { left: 5, top: 5 })
+                .add('typeSelector')
+                .add('mapTools', { left: 35, top: 5 });
+            var trafficControl = new ymaps.control.TrafficControl();
+            myMap.controls
+                .add(trafficControl)
+                .add(new ymaps.control.MiniMap({
+                    type: 'yandex#publicMap'
+                }));
+        }
+    </script>
 </head>
-
 <?php
 $xGrads = "49";
 $xMins = "";
@@ -45,61 +147,75 @@ if (isset($_GET['showMap'])) {
     $showMap = strip_tags($_GET['showMap']);
 }
 ?>
-<<<<<<< HEAD
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-</head>
-=======
-
-
->>>>>>> e168ccf0f63bb4b9e4186515891bbd0e23b3ddc9
-<div class="main-wrapper">
-    <script type="text/javascript">
-        function doClear(theText) {
-            if (theText.value == theText.defaultValue) {
-                theText.value = ""
-            }
-        }
-        function doDefault(theText) {
-            if (theText.value == "") {
-                theText.value = theText.defaultValue
-            }
-        }
-    </script>
-    <div class="pb-10">
+<body>
+<div class="topbar">
+    <div class="workpan">
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
-            <p>
-                <select name="xType">
-                    <option><?= $xType ?></option>
-                    <?php
-                    if ("S" == $xType) {
-                        echo "<option>N</option>";
-                    } else {
-                        echo "<option>S</option>";
-                    };
-                    ?>
-                </select>
-                <input class="nums" maxlength="2" size="2" onFocus="doClear(this)" onBlur="doDefault(this)" name="xGrads"
-                       value='<?= $xGrads ?>'/>.
-                <input maxlength="6" size="6" name="xMins" value='<?= $xMins ?>' class="nums"/> N 49/50.~~~~
-            <p>
-                <select name="yType">
-                    <option><?= $yType ?></option>
-                    <?php
-                    if ("W" == $yType) {
-                        echo "<option>E</option>";
-                    } else {
-                        echo "<option>W</option>";
-                    };
-                    ?>
-                </select>
-                <input class='nums' maxlength="2" size="2" value='<?= $yGrads ?>' name="yGrads" onFocus="doClear(this)"
-                       onBlur="doDefault(this)" class="nums"/>.
-                <input maxlength="6" size="6" value='<?= $yMins ?>' name="yMins" class="nums"/> E 36.~~~~~~
-            <p>
-                <input type="submit" value="Locate"/>
+            <div class="topelement">
+            <select name="xType" class="enter1">
+                <option><?= $xType ?></option>
+                <?php
+                if ("S" == $xType) {
+                    echo "<option>N</option>";
+                } else {
+                    echo "<option>S</option>";
+                };
+                ?>
+            </select>
+
+            <input class="nums" maxlength="2" size="2" onFocus="doClear(this)" onBlur="doDefault(this)" name="xGrads"
+                   value='<?= $xGrads ?>'/>.
+            <input maxlength="6" size="6" name="xMins" value='<?= $xMins ?>' class="nums2"/>
+            </div>
+            <div class="topelement">
+            <select name="yType" class="enter1">
+                <option><?= $yType ?></option>
+                <?php
+                if ("W" == $yType) {
+                    echo "<option>E</option>";
+                } else {
+                    echo "<option>W</option>";
+                };
+                ?>
+            </select>
+            <input class='nums' maxlength="2" size="2" value='<?= $yGrads ?>' name="yGrads" onFocus="doClear(this)"
+                   onBlur="doDefault(this)" class="nums"/>.
+            <input maxlength="6" size="6" value='<?= $yMins ?>' name="yMins" class="nums2"/>
+            <input type="submit" value="GO!">
+            </div>
+            <div class="settingbtn">
+                <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">Settings</a>
+                <!-- Modal -->
+                <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <!--       Окно настроек-->
+
+                    <div class="modal-header">
+                        <div class="make-switch switch-large">
+                            <input type="checkbox" checked>
+
+                            <button class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+    </div>
+</div>
+    <div class="main-wrapper">
+        <script type="text/javascript">
+            function doClear(theText) {
+                if (theText.value == theText.defaultValue) {
+                    theText.value = ""
+                }
+            }
+            function doDefault(theText) {
+                if (theText.value == "") {
+                    theText.value = theText.defaultValue
+                }
+            }
+        </script>
+        <div>
+
 
             <p>
                 <input type="checkbox" name="mobile" <?php if ("on" == $mobile) {
@@ -131,47 +247,44 @@ if (isset($_GET['showMap'])) {
 //                    echo "<a href=http://wikimapia.org/#lang=en&lat=" . $xCoor . "&lon=" . $yCoor . "&z=18&m=m target=\"_blank\"> <img src=\"http://upload.wikimedia.org/wikipedia/commons/e/ed/WikimapiaLogo.PNG\" alt=Find by Wikimapia\" width=\"30\" height=\"30\"> </a><br>";
 //                }
 
-                if ("on" == $mobile):?>
-                <a href=http://wikimapia.org/m/#lang=en&lat=<?php echo $xCoor; ?>&lon=<?php echo $yCoor; ?>&z=18&m=m target="_blank"> <img src="http://upload.wikimedia.org/wikipedia/commons/e/ed/WikimapiaLogo.PNG" alt="Find by Wikimapia" width="30" height="30"> </a><br>
+                    if ("on" == $mobile):?>
+                        <a href=http://wikimapia.org/m/#lang=en&lat=<?php echo $xCoor; ?>&lon=<?php echo $yCoor; ?>&z=18&m=m target="_blank"> <img src="http://upload.wikimedia.org/wikipedia/commons/e/ed/WikimapiaLogo.PNG" alt="Find by Wikimapia"
+                                                                                                                                                   width="30" height="30"> </a><br>
                     <?php else: ?>
-                    <a href=http://wikimapia.org/#lang=en&lat=<?php echo $xCoor; ?>&lon=<?php echo $yCoor; ?>&z=18&m=m target="_blank"> <img src="http://upload.wikimedia.org/wikipedia/commons/e/ed/WikimapiaLogo.PNG" alt="Find by Wikimapia" width="30" height="30"> </a><br>
-                            <?php endif;
-
-
-
-
-
-
-                     if ("on" == $showMap) {
+                        <div id="map" style="width:600px; height:600px"></div>
+                        <a href=http://wikimapia.org/#lang=en&lat=<?php echo $xCoor; ?>&lon=<?php echo $yCoor; ?>&z=18&m=m target="_blank"> <img src="http://upload.wikimedia.org/wikipedia/commons/e/ed/WikimapiaLogo.PNG" alt="Find by Wikimapia"
+                                                                                                                                                 width="30"
+                                                                                                                                                 height="30"> </a><br>
+                    <?php endif;
+                    if ("on" == $showMap) {
                         echo "<img class =\"yandex-image-size\" src=\"http://static-maps.yandex.ru/1.x/?ll=" . $yCoor . "," . $xCoor . "&spn=0.012657,0.00189&pt=" . $yCoor . "," . $xCoor . ",pm2ntl&l=map\">";
                     }
                 }
                 ?>
             </div>
-        </form>
+
+        </div>
+        <?php
+        ?>
+        <script type="text/javascript">
+            var Ecor = '<?php echo $yCoor;?>';
+            var Ncor = '<?php echo $xCoor;?>';
+            function go() {
+                $.ajax({type: "GET",
+                    url: "http://geocode-maps.yandex.ru/1.x/?geocode=" + Ecor + "," + Ncor + "&format=json",
+                    dataType: "JSON", timeout: 30000, async: false,
+                    success: function (html) {
+                        $('#adress').val(html.response.GeoObjectCollection.featureMember[0].GeoObject.name);
+                    }
+                });
+            }
+            go();
+        </script>
+        <a href="index.php">Reset</a>
+        <<<<<<< HEAD
+        >>>>>>> e168ccf0f63bb4b9e4186515891bbd0e23b3ddc9
+        v 1.0
     </div>
-    <?php
-    ?>
 
-
-    <script type="text/javascript">
-        var Ecor = '<?php echo $yCoor;?>';
-        var Ncor = '<?php echo $xCoor;?>';
-        function go() {
-            $.ajax({type: "GET",
-                url: "http://geocode-maps.yandex.ru/1.x/?geocode=" + Ecor + "," + Ncor + "&format=json",
-                dataType: "JSON", timeout: 30000, async: false,
-                success: function (html) {
-                    $('#adress').val(html.response.GeoObjectCollection.featureMember[0].GeoObject.name);
-                }
-            });
-        }
-        go();
-    </script>
-    <a href="index.php">Reset</a>
-
-
-    v 1.0
-</div>
 </body>
 </html>
