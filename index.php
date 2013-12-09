@@ -1,48 +1,12 @@
 <html>
 <head>
     <title>TD GeoHelper</title>
-    <link href="http://static.scripting.com/github/bootstrap2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://static.scripting.com/github/bootstrap2/js/jquery.js"></script>
-    <script src="http://static.scripting.com/github/bootstrap2/js/bootstrap-transition.js"></script>
-    <script src="http://static.scripting.com/github/bootstrap2/js/bootstrap-modal.js"></script>
-
-
+    <link href="/extension/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/extension/bootstrap/js/jquery.js"></script>
+    <script src="/extension/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/extension/bootstrap/js/bootstrap-modal.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <link rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/js/google-code-prettify/prettify.css"/>
-    <!--    <link rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/css/docs.css" />-->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery.js"></script>
-
-
-    <style>
-        .divDemoBody {
-            width: 30%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 100px;
-        }
-
-        .divDemoBody p {
-            font-size: 18px;
-            line-height: 140%;
-            padding-top: 12px;
-        }
-
-        .divDialogElements input {
-            font-size: 18px;
-            padding: 3px;
-            height: 32px;
-            width: 200px;
-        }
-
-        .divButton {
-            padding-top: 12px;
-        }
-    </style>
     <script>
         $(document).ready(function () {
             $('#windowTitleDialog').bind('show', function () {
@@ -60,8 +24,6 @@
         ;
     </script>
 
-
-    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('.nums').keypress(function (e) {
@@ -280,10 +242,7 @@ if (isset($_GET['showMap'])) {
             }
             go();
         </script>
-        <a href="index.php">Reset</a>
-        <<<<<<< HEAD
-        >>>>>>> e168ccf0f63bb4b9e4186515891bbd0e23b3ddc9
-        v 1.0
+        <a href="/">Reset</a>
     </div>
 
 </body>
