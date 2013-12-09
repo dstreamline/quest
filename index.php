@@ -24,6 +24,45 @@
         ;
     </script>
 
+
+
+<!--    GEO LOCATION-->
+    <script src="js/geo-min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+//        setInterval('getGeoposition()',10000);
+        function getGeoposition(){
+        if(geo_position_js.init()){
+            geo_position_js.getCurrentPosition(success_callback,error_callback,{enableHighAccuracy:true});
+
+        }
+        else{
+            alert("Ошибка определения gps координат");
+        }
+      }
+
+        function success_callback(p)
+        {
+            alert (p.coords.longitude);
+            //@todo  тут будет отправка на бекенд кор!
+
+//            $.ajax({type: "GET",
+//                url: "http://geocode-maps.yandex.ru/1.x/?geocode=" + p.coords.longitude.toFixed(6) + "," + p.coords.latitude.toFixed(6) + "&format=json",
+//                dataType: "JSON", timeout: 30000, async: false,
+//                success: function (html) {
+//                    $('#adress').val(html.response.GeoObjectCollection.featureMember[0].GeoObject.name);
+//                }
+//            });
+        }
+
+        function error_callback(p)
+        {
+         alert('error='+p.message);
+        }
+    </script>
+    <!--    GEO LOCATION-->
+
+
+
     <script type="text/javascript">
         $(document).ready(function () {
             $('.nums').keypress(function (e) {
