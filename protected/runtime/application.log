@@ -308,3 +308,395 @@ REQUEST_URI=/
 in E:\site\quest\protected\views\helper\index.php (276)
 in E:\site\quest\protected\controllers\HelperController.php (15)
 in E:\site\quest\index.php (13)
+2013/12/10 22:11:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/index
+---
+2013/12/10 22:11:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style.css".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('style.css')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('style.css')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/style.cs...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/style.css
+HTTP_REFERER=http://geohelper.local/helper/index
+---
+2013/12/10 22:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style.css".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('style.css')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('style.css')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/style.cs...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/style.css
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:11:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style.css".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('style.css')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('style.css')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/style.cs...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/style.css
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:11:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:23:57 [error] [php] Undefined variable: theme (E:\site\quest\protected\components\Controller.php:13)
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(265): HelperController->runActionWithFilters()
+#1 E:\site\quest\framework\web\CWebApplication.php(282): HelperController->run()
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CWebApplication->run()
+REQUEST_URI=/helper/
+in E:\site\quest\protected\components\Controller.php (13)
+in E:\site\quest\index.php (13)
+2013/12/10 22:24:08 [error] [php] Undefined variable: theme (E:\site\quest\protected\components\Controller.php:13)
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(265): HelperController->runActionWithFilters()
+#1 E:\site\quest\framework\web\CWebApplication.php(282): HelperController->run()
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CWebApplication->run()
+REQUEST_URI=/helper/
+in E:\site\quest\protected\components\Controller.php (13)
+in E:\site\quest\index.php (13)
+2013/12/10 22:25:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style.css".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('style.css')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('style.css')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/style.cs...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/style.css
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:25:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:26:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "style.css".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('style.css')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('style.css')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/style.cs...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/style.css
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:26:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:26:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:27:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:27:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:27:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:28:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:28:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:29:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:29:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:29:47 [error] [php] Undefined variable: cs (E:\site\quest\protected\views\helper\index.php:2)
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(869): HelperController->renderFile()
+#1 E:\site\quest\protected\controllers\HelperController.php(17): HelperController->renderPartial()
+#2 E:\site\quest\framework\web\actions\CInlineAction.php(49): HelperController->actionIndex()
+#3 E:\site\quest\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\site\quest\framework\web\CController.php(286): HelperController->runAction()
+#5 E:\site\quest\framework\web\CController.php(265): HelperController->runActionWithFilters()
+#6 E:\site\quest\framework\web\CWebApplication.php(282): HelperController->run()
+#7 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\site\quest\index.php(13): CWebApplication->run()
+REQUEST_URI=/helper/
+in E:\site\quest\protected\views\helper\index.php (2)
+in E:\site\quest\protected\controllers\HelperController.php (17)
+in E:\site\quest\index.php (13)
+2013/12/10 22:30:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:30:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:31:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:31:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:31:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:31:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:32:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:32:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:32:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:32:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:32:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:32:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:32:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:32:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:33:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:33:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---

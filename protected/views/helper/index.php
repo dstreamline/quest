@@ -1,10 +1,10 @@
 
     <title>TD GeoHelper</title>
-    <link href="/extension/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/extension/bootstrap/js/jquery.js"></script>
-    <script src="/extension/bootstrap/js/bootstrap-transition.js"></script>
-    <script src="/extension/bootstrap/js/bootstrap-modal.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<!--    <link href="/extension/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+<!--    <script src="/extension/bootstrap/js/jquery.js"></script>-->
+<!--    <script src="/extension/bootstrap/js/bootstrap-transition.js"></script>-->
+<!--    <script src="/extension/bootstrap/js/bootstrap-modal.js"></script>-->
+<!--    <link rel="stylesheet" type="text/css" href="style.css">-->
 
     <script>
         $(document).ready(function () {
