@@ -1,0 +1,310 @@
+2013/12/10 21:31:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:32:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:34:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:34:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:34:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php
+HTTP_REFERER=http://geohelper.local/
+---
+2013/12/10 21:35:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:35:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:36:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:36:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:36:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:42:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=site/page&view=about
+HTTP_REFERER=http://geohelper.local/index.php?r=site/contact
+---
+2013/12/10 21:42:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:46:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:47:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:47:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "streethelper ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:47:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "MembersdetController ".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:47:58 [error] [exception.CException] exception 'CException' with message 'MembersdetController cannot find the requested view "index".' in E:\site\quest\framework\web\CController.php:878
+Stack trace:
+#0 E:\site\quest\protected\controllers\MembersdetController.php(15): CController->renderPartial('index')
+#1 E:\site\quest\framework\web\actions\CInlineAction.php(49): MembersdetController->actionIndex()
+#2 E:\site\quest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 E:\site\quest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 E:\site\quest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('')
+#6 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#7 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 E:\site\quest\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:48:36 [error] [exception.CException] exception 'CException' with message 'HelperController cannot find the requested view "index".' in E:\site\quest\framework\web\CController.php:878
+Stack trace:
+#0 E:\site\quest\protected\controllers\HelperController.php(15): CController->renderPartial('index')
+#1 E:\site\quest\framework\web\actions\CInlineAction.php(49): HelperController->actionIndex()
+#2 E:\site\quest\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 E:\site\quest\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 E:\site\quest\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('')
+#6 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#7 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 E:\site\quest\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/
+---
+2013/12/10 21:49:38 [error] [php] Undefined variable: yCoor (E:\site\quest\protected\views\helper\index.php:274)
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(869): HelperController->renderFile()
+#1 E:\site\quest\protected\controllers\HelperController.php(15): HelperController->renderPartial()
+#2 E:\site\quest\framework\web\actions\CInlineAction.php(49): HelperController->actionIndex()
+#3 E:\site\quest\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\site\quest\framework\web\CController.php(286): HelperController->runAction()
+#5 E:\site\quest\framework\web\CController.php(265): HelperController->runActionWithFilters()
+#6 E:\site\quest\framework\web\CWebApplication.php(282): HelperController->run()
+#7 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\site\quest\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\site\quest\protected\views\helper\index.php (274)
+in E:\site\quest\protected\controllers\HelperController.php (15)
+in E:\site\quest\index.php (13)
+2013/12/10 21:50:04 [error] [php] Undefined variable: yCoor (E:\site\quest\protected\views\helper\index.php:274)
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(869): HelperController->renderFile()
+#1 E:\site\quest\protected\controllers\HelperController.php(15): HelperController->renderPartial()
+#2 E:\site\quest\framework\web\actions\CInlineAction.php(49): HelperController->actionIndex()
+#3 E:\site\quest\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\site\quest\framework\web\CController.php(286): HelperController->runAction()
+#5 E:\site\quest\framework\web\CController.php(265): HelperController->runActionWithFilters()
+#6 E:\site\quest\framework\web\CWebApplication.php(282): HelperController->run()
+#7 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\site\quest\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\site\quest\protected\views\helper\index.php (274)
+in E:\site\quest\protected\controllers\HelperController.php (15)
+in E:\site\quest\index.php (13)
+2013/12/10 21:50:30 [error] [php] Undefined variable: yCoor (E:\site\quest\protected\views\helper\index.php:275)
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(869): HelperController->renderFile()
+#1 E:\site\quest\protected\controllers\HelperController.php(15): HelperController->renderPartial()
+#2 E:\site\quest\framework\web\actions\CInlineAction.php(49): HelperController->actionIndex()
+#3 E:\site\quest\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\site\quest\framework\web\CController.php(286): HelperController->runAction()
+#5 E:\site\quest\framework\web\CController.php(265): HelperController->runActionWithFilters()
+#6 E:\site\quest\framework\web\CWebApplication.php(282): HelperController->run()
+#7 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\site\quest\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\site\quest\protected\views\helper\index.php (275)
+in E:\site\quest\protected\controllers\HelperController.php (15)
+in E:\site\quest\index.php (13)
+2013/12/10 21:52:16 [error] [php] Undefined variable: yCoor (E:\site\quest\protected\views\helper\index.php:273)
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(869): HelperController->renderFile()
+#1 E:\site\quest\protected\controllers\HelperController.php(15): HelperController->renderPartial()
+#2 E:\site\quest\framework\web\actions\CInlineAction.php(49): HelperController->actionIndex()
+#3 E:\site\quest\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\site\quest\framework\web\CController.php(286): HelperController->runAction()
+#5 E:\site\quest\framework\web\CController.php(265): HelperController->runActionWithFilters()
+#6 E:\site\quest\framework\web\CWebApplication.php(282): HelperController->run()
+#7 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\site\quest\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\site\quest\protected\views\helper\index.php (273)
+in E:\site\quest\protected\controllers\HelperController.php (15)
+in E:\site\quest\index.php (13)
+2013/12/10 21:52:17 [error] [php] Undefined variable: yCoor (E:\site\quest\protected\views\helper\index.php:273)
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(869): HelperController->renderFile()
+#1 E:\site\quest\protected\controllers\HelperController.php(15): HelperController->renderPartial()
+#2 E:\site\quest\framework\web\actions\CInlineAction.php(49): HelperController->actionIndex()
+#3 E:\site\quest\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\site\quest\framework\web\CController.php(286): HelperController->runAction()
+#5 E:\site\quest\framework\web\CController.php(265): HelperController->runActionWithFilters()
+#6 E:\site\quest\framework\web\CWebApplication.php(282): HelperController->run()
+#7 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\site\quest\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\site\quest\protected\views\helper\index.php (273)
+in E:\site\quest\protected\controllers\HelperController.php (15)
+in E:\site\quest\index.php (13)
+2013/12/10 21:52:32 [error] [php] Undefined variable: yCoor (E:\site\quest\protected\views\helper\index.php:273)
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(869): HelperController->renderFile()
+#1 E:\site\quest\protected\controllers\HelperController.php(15): HelperController->renderPartial()
+#2 E:\site\quest\framework\web\actions\CInlineAction.php(49): HelperController->actionIndex()
+#3 E:\site\quest\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\site\quest\framework\web\CController.php(286): HelperController->runAction()
+#5 E:\site\quest\framework\web\CController.php(265): HelperController->runActionWithFilters()
+#6 E:\site\quest\framework\web\CWebApplication.php(282): HelperController->run()
+#7 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\site\quest\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\site\quest\protected\views\helper\index.php (273)
+in E:\site\quest\protected\controllers\HelperController.php (15)
+in E:\site\quest\index.php (13)
+2013/12/10 21:53:09 [error] [php] Undefined variable: xCoor (E:\site\quest\protected\views\helper\index.php:276)
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(869): HelperController->renderFile()
+#1 E:\site\quest\protected\controllers\HelperController.php(15): HelperController->renderPartial()
+#2 E:\site\quest\framework\web\actions\CInlineAction.php(49): HelperController->actionIndex()
+#3 E:\site\quest\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 E:\site\quest\framework\web\CController.php(286): HelperController->runAction()
+#5 E:\site\quest\framework\web\CController.php(265): HelperController->runActionWithFilters()
+#6 E:\site\quest\framework\web\CWebApplication.php(282): HelperController->run()
+#7 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\site\quest\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\site\quest\protected\views\helper\index.php (276)
+in E:\site\quest\protected\controllers\HelperController.php (15)
+in E:\site\quest\index.php (13)
