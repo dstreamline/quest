@@ -10,21 +10,16 @@ class Controller extends CController
         if( parent::beforeAction($action) ) {
             /* @var $cs CClientScript */
             $baseUrl = Yii::app()->baseUrl;
-            $cs = Yii::app()->getClientScript();
-
-
-            $cs = Yii::app()->getClientScript();
+             $cs = Yii::app()->getClientScript();
 
             /* @var $baseUrl$theme CTheme */
             $theme = Yii::app()->theme;
-            $cs->registerScriptFile($baseUrl . '/js/geo.js' );
-            $cs->registerScriptFile( $baseUrl . '/js/geo-min.js' );
-            $cs->registerScriptFile( $baseUrl . '/geo_position_js_simulator.js' );
             $cs->registerCssFile( $baseUrl . '/extension/bootstrap/css/bootstrap.min.css' );
             $cs->registerScriptFile( $baseUrl . '/extension/bootstrap/js/jquery.js' );
             $cs->registerScriptFile( $baseUrl . '/extension/bootstrap/js/bootstrap-transition.js' );
             $cs->registerScriptFile( $baseUrl . '/extension/bootstrap/js/bootstrap-modal.js' );
             $cs->registerCssFile( $baseUrl . '/css/style.css' );
+
             return true;
         }
         return false;

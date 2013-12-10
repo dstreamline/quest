@@ -1,10 +1,4 @@
-
     <title>TD GeoHelper</title>
-<!--    <link href="/extension/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
-<!--    <script src="/extension/bootstrap/js/jquery.js"></script>-->
-<!--    <script src="/extension/bootstrap/js/bootstrap-transition.js"></script>-->
-<!--    <script src="/extension/bootstrap/js/bootstrap-modal.js"></script>-->
-<!--    <link rel="stylesheet" type="text/css" href="style.css">-->
 
     <script>
         $(document).ready(function () {
@@ -26,10 +20,10 @@
 
 
     <!--    GEO LOCATION-->
-    <script src="js/geo-min.js" type="text/javascript" charset="utf-8"></script>
     <script>
-        //        setInterval('getGeoposition()',10000);
-        function getGeoposition(){
+               setInterval('getGeoLocation()',10000);
+
+        function getGeoLocation(){
             if(geo_position_js.init()){
                 geo_position_js.getCurrentPosition(success_callback,error_callback,{enableHighAccuracy:true});
 
@@ -41,17 +35,17 @@
 
         function success_callback(p)
         {
-            alert (p.coords.longitude);
-            //@todo  тут будет отправка на бекенд кор!
 
-//            $.ajax({type: "GET",
-//                url: "http://geocode-maps.yandex.ru/1.x/?geocode=" + p.coords.longitude.toFixed(6) + "," + p.coords.latitude.toFixed(6) + "&format=json",
-//                dataType: "JSON", timeout: 30000, async: false,
-//                success: function (html) {
-//                    $('#adress').val(html.response.GeoObjectCollection.featureMember[0].GeoObject.name);
-//                }
-//            });
-        }
+            $.ajax({
+                type: 'POST',
+                url: 'Metric/ajaxbackend',
+                data: {longitude:p.coords.longitude.toFixed(6), latitude:p.coords.latitude.toFixed(6) },
+
+                success: function(data)
+                {
+                 }
+                });
+         }
 
         function error_callback(p)
         {
@@ -60,6 +54,10 @@
     </script>
     <!--    GEO LOCATION-->
 
+
+
+
+    
 
 
     <script type="text/javascript">
