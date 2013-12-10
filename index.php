@@ -149,8 +149,12 @@ if (isset($_GET['showMap'])) {
 }
 ?>
 <body>
-<div class="topbar">
-    <div class="workpan">
+
+
+<div class="show-for-small">КНОПКА </div>
+
+<div class="topbar border-class">
+    <div class="workpan border-class">
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
             <div class="topelement">
             <select name="xType" class="enter1">
@@ -202,7 +206,7 @@ if (isset($_GET['showMap'])) {
     </div>
     </div>
 </div>
-    <div class="main-wrapper">
+    <div class="main-wrapper border-class">
         <script type="text/javascript">
             function doClear(theText) {
                 if (theText.value == theText.defaultValue) {
