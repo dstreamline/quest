@@ -700,12 +700,304 @@ Stack trace:
 REQUEST_URI=/helper/js/geo-min.js
 HTTP_REFERER=http://geohelper.local/helper/
 ---
-2013/12/10 22:35:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in M:\www\my.proj\www\navigate\framework\web\CWebApplication.php:286
+2013/12/10 22:34:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
 Stack trace:
-#0 M:\www\my.proj\www\navigate\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
-#1 M:\www\my.proj\www\navigate\framework\base\CApplication.php(180): CWebApplication->processRequest()
-#2 M:\www\my.proj\www\navigate\index.php(13): CApplication->run()
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
 #3 {main}
-REQUEST_URI=/navigate/geo_position_js_simulator.js
-HTTP_REFERER=http://www.my.proj/navigate/index.php
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:36:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:36:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:37:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:37:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:37:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:37:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:42:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geo_position_js_simulator.js".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geo_position_js...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geo_position_js_simulator.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:42:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:42:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in E:\site\quest\framework\web\CController.php:483
+Stack trace:
+#0 E:\site\quest\framework\web\CController.php(270): CController->missingAction('js')
+#1 E:\site\quest\framework\web\CWebApplication.php(282): CController->run('js')
+#2 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('helper/js/geo-m...')
+#3 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\site\quest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/helper/js/geo-min.js
+HTTP_REFERER=http://geohelper.local/helper/
+---
+2013/12/10 22:46:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/12/10 22:46:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/12/10 23:18:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Metric/ajaxbackend".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('Metric/ajaxback...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Metric/ajaxbackend
+HTTP_REFERER=http://geohelper.local/index.php?xType=N&xGrads=49&xMins=453534&yType=E&yGrads=36&yMins=345345
+---
+2013/12/10 23:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Metric/ajaxbackend".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('Metric/ajaxback...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Metric/ajaxbackend
+HTTP_REFERER=http://geohelper.local/index.php?xType=N&xGrads=49&xMins=453534&yType=E&yGrads=36&yMins=345345
+---
+2013/12/10 23:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Metric/ajaxbackend".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('Metric/ajaxback...')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Metric/ajaxbackend
+HTTP_REFERER=http://geohelper.local/index.php?xType=N&xGrads=49&xMins=453534&yType=E&yGrads=36&yMins=345345
+---
+2013/12/10 23:50:33 [error] [system.db.CDbCommand] Error in preparing SQL: CREATE TABLE 'geo_locals' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"longitude" VARCHAR (32) NOT NULL,
+	"latitude" VARCHAR (32) NOT NULL,
+	"user_id" VARCHAR (32)  NOT NULL,
+	"time" int (10) UNSIGNED NOT NULL
+)
+2013/12/10 23:50:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "UNSIGNED": syntax error. The SQL statement executed was: CREATE TABLE 'geo_locals' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"longitude" VARCHAR (32) NOT NULL,
+	"latitude" VARCHAR (32) NOT NULL,
+	"user_id" VARCHAR (32)  NOT NULL,
+	"time" int (10) UNSIGNED NOT NULL
+).
+2013/12/10 23:50:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "UNSIGNED": syntax error. The SQL statement executed was: CREATE TABLE 'geo_locals' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"longitude" VARCHAR (32) NOT NULL,
+	"latitude" VARCHAR (32) NOT NULL,
+	"user_id" VARCHAR (32)  NOT NULL,
+	"time" int (10) UNSIGNED NOT NULL
+)' in E:\site\quest\framework\db\CDbCommand.php:358
+Stack trace:
+#0 E:\site\quest\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 E:\site\quest\framework\db\CDbMigration.php(233): CDbCommand->createTable('geo_locals', Array, NULL)
+#2 E:\site\quest\protected\migrations\m131210_224045_create_database_log.php(13): CDbMigration->createTable('geo_locals', Array)
+#3 E:\site\quest\framework\cli\commands\MigrateCommand.php(385): m131210_224045_create_database_log->up()
+#4 E:\site\quest\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m131210_224045_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 E:\site\quest\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 E:\site\quest\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 E:\site\quest\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 E:\site\quest\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 E:\site\quest\framework\yiic.php(33): CApplication->run()
+#11 E:\site\quest\protected\yiic.php(7): require_once('E:\site\quest\f...')
+#12 E:\site\quest\protected\yiic(4): require_once('E:\site\quest\p...')
+#13 {main}
+---
+2013/12/10 23:51:53 [error] [system.db.CDbCommand] Error in preparing SQL: CREATE TABLE 'geo_locals' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"longitude" VARCHAR (32) NOT NULL,
+	"latitude" VARCHAR (32) NOT NULL,
+	"user_id" VARCHAR (32)  NOT NULL,
+	"time" INT (10) UNSIGNED NOT NULL
+)
+2013/12/10 23:51:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "UNSIGNED": syntax error. The SQL statement executed was: CREATE TABLE 'geo_locals' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"longitude" VARCHAR (32) NOT NULL,
+	"latitude" VARCHAR (32) NOT NULL,
+	"user_id" VARCHAR (32)  NOT NULL,
+	"time" INT (10) UNSIGNED NOT NULL
+).
+2013/12/10 23:51:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "UNSIGNED": syntax error. The SQL statement executed was: CREATE TABLE 'geo_locals' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"longitude" VARCHAR (32) NOT NULL,
+	"latitude" VARCHAR (32) NOT NULL,
+	"user_id" VARCHAR (32)  NOT NULL,
+	"time" INT (10) UNSIGNED NOT NULL
+)' in E:\site\quest\framework\db\CDbCommand.php:358
+Stack trace:
+#0 E:\site\quest\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 E:\site\quest\framework\db\CDbMigration.php(233): CDbCommand->createTable('geo_locals', Array, NULL)
+#2 E:\site\quest\protected\migrations\m131210_224045_create_database_log.php(13): CDbMigration->createTable('geo_locals', Array)
+#3 E:\site\quest\framework\cli\commands\MigrateCommand.php(385): m131210_224045_create_database_log->up()
+#4 E:\site\quest\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m131210_224045_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 E:\site\quest\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 E:\site\quest\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 E:\site\quest\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 E:\site\quest\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 E:\site\quest\framework\yiic.php(33): CApplication->run()
+#11 E:\site\quest\protected\yiic.php(7): require_once('E:\site\quest\f...')
+#12 E:\site\quest\protected\yiic(4): require_once('E:\site\quest\p...')
+#13 {main}
+---
+2013/12/10 23:52:11 [error] [system.db.CDbCommand] Error in preparing SQL: CREATE TABLE 'geo_locals' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"longitude" VARCHAR  NOT NULL,
+	"latitude" VARCHAR  NOT NULL,
+	"user_id" VARCHAR   NOT NULL,
+	"time" INT (10) UNSIGNED NOT NULL
+)
+2013/12/10 23:52:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "UNSIGNED": syntax error. The SQL statement executed was: CREATE TABLE 'geo_locals' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"longitude" VARCHAR  NOT NULL,
+	"latitude" VARCHAR  NOT NULL,
+	"user_id" VARCHAR   NOT NULL,
+	"time" INT (10) UNSIGNED NOT NULL
+).
+2013/12/10 23:52:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "UNSIGNED": syntax error. The SQL statement executed was: CREATE TABLE 'geo_locals' (
+	"id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+	"longitude" VARCHAR  NOT NULL,
+	"latitude" VARCHAR  NOT NULL,
+	"user_id" VARCHAR   NOT NULL,
+	"time" INT (10) UNSIGNED NOT NULL
+)' in E:\site\quest\framework\db\CDbCommand.php:358
+Stack trace:
+#0 E:\site\quest\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 E:\site\quest\framework\db\CDbMigration.php(233): CDbCommand->createTable('geo_locals', Array, NULL)
+#2 E:\site\quest\protected\migrations\m131210_224045_create_database_log.php(13): CDbMigration->createTable('geo_locals', Array)
+#3 E:\site\quest\framework\cli\commands\MigrateCommand.php(385): m131210_224045_create_database_log->up()
+#4 E:\site\quest\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m131210_224045_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 E:\site\quest\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 E:\site\quest\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 E:\site\quest\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 E:\site\quest\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 E:\site\quest\framework\yiic.php(33): CApplication->run()
+#11 E:\site\quest\protected\yiic.php(7): require_once('E:\site\quest\f...')
+#12 E:\site\quest\protected\yiic(4): require_once('E:\site\quest\p...')
+#13 {main}
+---
+2013/12/10 23:56:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'testdrive'' in E:\site\quest\framework\db\CDbConnection.php:382
+Stack trace:
+#0 E:\site\quest\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 E:\site\quest\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 E:\site\quest\framework\base\CModule.php(387): CDbConnection->init()
+#3 E:\site\quest\framework\cli\commands\MigrateCommand.php(442): CModule->getComponent('db')
+#4 E:\site\quest\framework\cli\commands\MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 E:\site\quest\framework\cli\commands\MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 E:\site\quest\framework\cli\commands\MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 E:\site\quest\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 E:\site\quest\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 E:\site\quest\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 E:\site\quest\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#12 E:\site\quest\framework\yiic.php(33): CApplication->run()
+#13 E:\site\quest\protected\yiic.php(7): require_once('E:\site\quest\f...')
+#14 E:\site\quest\protected\yiic(4): require_once('E:\site\quest\p...')
+#15 {main}
+---
+2013/12/10 23:57:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'geolocator.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/12/10 23:57:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2013/12/11 00:35:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "geohelper".' in E:\site\quest\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\site\quest\framework\web\CWebApplication.php(141): CWebApplication->runController('geohelper')
+#1 E:\site\quest\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\site\quest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/geohelper
 ---
