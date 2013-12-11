@@ -21,7 +21,7 @@
 
     <!--    GEO LOCATION-->
     <script>
-               setInterval('getGeoLocation()',10000);
+               setInterval('getGeoLocation()',5000);
 
         function getGeoLocation(){
             if(geo_position_js.init()){
@@ -39,7 +39,7 @@
             $.ajax({
                 type: 'POST',
                 url: 'Metric/ajaxbackend',
-                data: {longitude:p.coords.longitude.toFixed(6), latitude:p.coords.latitude.toFixed(6) },
+                data: {longitude:p.coords.longitude.toFixed(6), latitude:p.coords.latitude.toFixed(6),user_id:navigator.userAgent},
 
                 success: function(data)
                 {
@@ -57,7 +57,7 @@
 
 
 
-    
+
 
 
     <script type="text/javascript">
