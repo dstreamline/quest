@@ -19,7 +19,8 @@ class Controller extends CController
             $cs->registerScriptFile( $baseUrl . '/extension/bootstrap/js/bootstrap-transition.js' );
             $cs->registerScriptFile( $baseUrl . '/extension/bootstrap/js/bootstrap-modal.js' );
             $cs->registerCssFile( $baseUrl . '/css/style.css' );
-
+            $cs->registerScriptFile( $baseUrl . '/extension/bootstrap-switch/build/js/bootstrap-switch.js' );
+            $cs->registerCssFile( $baseUrl . '/extension/bootstrap-switch/build/css/bootstrap3/bootstrap-switch.css' );
             return true;
         }
         return false;
