@@ -69,8 +69,8 @@ $yMins = "";
 $yCoor = 36;
 $xCoor = 50;
 $mobile = "off";
-$showmap = "on";
-$dynmap = "on";
+$showmap = "off";
+$dynmap = "off";
 if (isset($_GET['xGrads'])) {
     $xGrads = $_GET['xGrads'] * 1;
 }
@@ -140,7 +140,7 @@ if (isset($_GET['dynmap'])) {
                                         Mobile Wikimapia
                                     </div>
                                     <div class="cl-xs-12">
-                                        <div class="make-switch switch-small">
+                                        <div>
                                             <input type="checkbox" name="mobile" <?php if ("on" == $mobile) {
                                                 echo "checked";
                                             } ?> >
@@ -149,7 +149,7 @@ if (isset($_GET['dynmap'])) {
                                     <div class="cl-xs-12">
                                         Show map</div>
                                     <div class="cl-xs-12">
-                                        <div class="make-switch switch-small">
+                                        <div>
                                             <input type="checkbox" name="showmap" <?php if ("on" == $showmap) {
                                                 echo "checked";
                                             } ?> >
@@ -157,7 +157,7 @@ if (isset($_GET['dynmap'])) {
                                     </div>
                                     <div class="cl-xs-12">Dymanic map</div>
                                     <div class="cl-xs-12">
-                                        <div class="make-switch switch-small">
+                                        <div>
                                             <input type="checkbox" name="dynmap" <?php if ("on" == $dynmap) {
                                                 echo "checked";
                                             } ?> >
