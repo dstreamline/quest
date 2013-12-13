@@ -53,6 +53,49 @@ class MetricController extends Controller
 
     }
 
+
+
+
+    public function actionAjaxb()
+    {
+
+
+
+            $h_ua = str_replace('windows ce', '', strtolower($_SERVER['HTTP_USER_AGENT']));
+            if (
+                !$h_ua ||
+                strpos($h_ua, 'windows') !== false
+            ) {
+                // it's computer - not show counter
+            } else {
+
+
+                $geoLog = new GeoLog();
+                $geoLog->longitude = $_POST['lon'];
+                $geoLog->latitude = $_POST['lat'];
+                $geoLog->user_id = $_POST['imei'];
+                $geoLog->time = time();
+                $geoLog->insert();
+
+                $geoUser = GeoUnique::model()->findAll('user_id="' . $_POST['imei'] . '"');
+                if (isset($geoUser)) {
+                    foreach ($geoUser as $userData) {
+                        $userData->delete();
+                    }
+                }
+                $geoUser = new GeoUnique();
+                $geoUser->longitude = $_POST['lon'];
+                $geoUser->latitude = $_POST['lat'];
+                $geoUser->user_id = $_POST['trackid'];
+                $geoUser->time = time();
+                $geoUser->insert();
+            }
+
+
+    }
+
+
+
     public function actionGetcores()
     {
         if (Yii::app()->request->isAjaxRequest) {

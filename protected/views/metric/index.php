@@ -11,6 +11,8 @@
 
     <script type="text/javascript">
 
+
+
         setTimeout('getCores()',1000);
 
        function timeouter (parm){
@@ -113,7 +115,6 @@
     </div>
 </div>
 <input type="hidden" id="intervalen" value="0">
-
 </body>
 
 </html>

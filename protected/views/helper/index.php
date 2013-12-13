@@ -279,4 +279,6 @@ if (isset($_GET['xGrads']) && isset($_GET['xMins']) && isset($_GET['yGrads']) &&
             }));
     }
 </script>
+
+
 </body>
