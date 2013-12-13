@@ -14,7 +14,7 @@ body {
 .enter-field
 {
     text-align: center;
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
 }
 .moover
@@ -84,7 +84,8 @@ body {
 
 /*отступы*/
 .pb-10 {
-
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .spacer {

@@ -71,6 +71,7 @@ $xCoor = 50;
 $mobile = "off";
 $showmap = "off";
 $dynmap = "off";
+$adres = "";
 if (isset($_GET['xGrads'])) {
     $xGrads = $_GET['xGrads'] * 1;
 }
@@ -92,6 +93,9 @@ if (isset($_GET['showmap'])) {
 if (isset($_GET['dynmap'])) {
     $dynmap = strip_tags($_GET['dynmap']);
 }
+if (isset($_GET['adres'])) {
+    $adres = strip_tags($_GET['adres']);
+}
 ?>
 
 
@@ -101,7 +105,7 @@ if (isset($_GET['dynmap'])) {
     <div class="enter-field">
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
             <div class="row">
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-3 border-class pb-10">
                     <div class="input-group moover">
                         <span class="input-group-addon worldside-size input-font-text-size fll">N</span>
                         <input type="text" maxlength="2" size="2" class="form-control grads-size input-font-size fll" onBlur="doDefault(this)" name="xGrads" onFocus="doClear(this)"
@@ -109,7 +113,7 @@ if (isset($_GET['dynmap'])) {
                         <input type="text" class="form-control mins-size input-font-size fll" maxlength="6" size="6" name="xMins" value='<?= $xMins ?>'>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-3 border-class pb-10">
                     <div class="input-group moover">
                         <span class="input-group-addon worldside-size input-font-text-size fll">E</span>
                         <input type="text" maxlength="2" size="2" class="form-control grads-size input-font-size fll" onBlur="doDefault(this)" name="yGrads" onFocus="doClear(this)"
@@ -117,14 +121,16 @@ if (isset($_GET['dynmap'])) {
                         <input type="text" class="form-control mins-size input-font-size fll" maxlength="6" size="6" name="yMins" value='<?= $yMins ?>'>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-3 border-class pb-10">
+                    <div class="form-group">
+                        <input type="text" name="adres"class="form-control input-font-size fll" id="exampleInputEmail1" placeholder="или адрес" type="text">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 border-class pb-10">
 
                     <button type="submit" class="btn btn-success">
                         GO!
                     </button>
-
-
-
                     <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                         Настройки
                     </button>
@@ -192,9 +198,14 @@ if (isset($_GET['xGrads']) && isset($_GET['xMins']) && isset($_GET['yGrads']) &&
 <script type="text/javascript">
 
     $(document).on("click", "#redirectz", function(e) {
-        window.location.href = '<?php echo Yii::app()->request->getBaseUrl(true);?>/metric?search=1&lang=<?php echo $yCoor; ?>&long=<?php echo $xCoor; ?>';
+        window.location.href = '<?php echo Yii::app()->request->getBaseUrl(true);?>/metric?search=<?php if (empty ($adres)) {echo 1;} else {echo 2;}?>&lang=<?php echo $yCoor; ?>&long=<?php echo $xCoor; ?>&adr=<?php echo $adres?>';
     });
 </script>
+
+
+
+
+<?php if ((isset($_GET['xGrads']) && isset($_GET['xMins']) && isset($_GET['yGrads']) && isset($_GET['xMins'])) ||(isset($_GET['adres'])) ) {?>
 <div class="main-wrapper">
     <div>
         <div class="both">
@@ -250,7 +261,7 @@ if (isset($_GET['xGrads']) && isset($_GET['xMins']) && isset($_GET['yGrads']) &&
     </script>
     <a href="index.php">Reset</a>
 </div>
-
+<?php }?>
 <script type="text/javascript">
     ymaps.ready(init);
     function init() {
