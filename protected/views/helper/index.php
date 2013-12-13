@@ -105,7 +105,7 @@ if (isset($_GET['adres'])) {
     <div class="enter-field">
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
             <div class="row">
-                <div class="col-xs-12 col-sm-3 border-class pb-10">
+                <div class="col-xs-12 col-sm-3 pb-10">
                     <div class="input-group moover">
                         <span class="input-group-addon worldside-size input-font-text-size fll">N</span>
                         <input type="text" maxlength="2" size="2" class="form-control grads-size input-font-size fll" onBlur="doDefault(this)" name="xGrads" onFocus="doClear(this)"
@@ -113,7 +113,7 @@ if (isset($_GET['adres'])) {
                         <input type="text" class="form-control mins-size input-font-size fll" maxlength="6" size="6" name="xMins" value='<?= $xMins ?>'>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 border-class pb-10">
+                <div class="col-xs-12 col-sm-3 pb-10">
                     <div class="input-group moover">
                         <span class="input-group-addon worldside-size input-font-text-size fll">E</span>
                         <input type="text" maxlength="2" size="2" class="form-control grads-size input-font-size fll" onBlur="doDefault(this)" name="yGrads" onFocus="doClear(this)"
@@ -121,12 +121,12 @@ if (isset($_GET['adres'])) {
                         <input type="text" class="form-control mins-size input-font-size fll" maxlength="6" size="6" name="yMins" value='<?= $yMins ?>'>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 border-class pb-10">
+                <div class="col-xs-12 col-sm-3 pb-10">
                     <div class="form-group">
                         <input type="text" name="adres"class="form-control input-font-size fll" id="exampleInputEmail1" placeholder="или адрес" type="text">
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 border-class pb-10">
+                <div class="col-xs-12 col-sm-3 pb-10">
 
                     <button type="submit" class="btn btn-success">
                         GO!
