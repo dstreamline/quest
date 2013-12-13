@@ -123,8 +123,10 @@ if (isset($_GET['dynmap'])) {
                         GO!
                     </button>
 
+
+
                     <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                        Settings
+                        Настройки
                     </button>
 
                     <!-- Modal -->
@@ -133,11 +135,11 @@ if (isset($_GET['dynmap'])) {
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title" id="myModalLabel">Settings</h4>
+                                    <h4 class="modal-title" id="myModalLabel">Настройки</h4>
                                 </div>
                                 <div class="modal-body">
                                     <div class="cl-xs-12">
-                                        Mobile Wikimapia
+                                        Мобильная Wikimapia
                                     </div>
                                     <div class="cl-xs-12">
                                         <div>
@@ -147,7 +149,7 @@ if (isset($_GET['dynmap'])) {
                                         </div>
                                     </div>
                                     <div class="cl-xs-12">
-                                        Show map</div>
+                                        Показать карту</div>
                                     <div class="cl-xs-12">
                                         <div>
                                             <input type="checkbox" name="showmap" <?php if ("on" == $showmap) {
@@ -155,7 +157,7 @@ if (isset($_GET['dynmap'])) {
                                             } ?> >
                                         </div>
                                     </div>
-                                    <div class="cl-xs-12">Dymanic map</div>
+                                    <div class="cl-xs-12">Динамическая карта вместо картинки</div>
                                     <div class="cl-xs-12">
                                         <div>
                                             <input type="checkbox" name="dynmap" <?php if ("on" == $dynmap) {
@@ -187,12 +189,23 @@ if (isset($_GET['xGrads']) && isset($_GET['xMins']) && isset($_GET['yGrads']) &&
 }
 ?>
 
+<script type="text/javascript">
 
+    $(document).on("click", "#redirectz", function(e) {
+        window.location.href = '<?php echo Yii::app()->request->getBaseUrl(true);?>/metric?search=1&lang=<?php echo $yCoor; ?>&long=<?php echo $xCoor; ?>';
+    });
+</script>
 <div class="main-wrapper">
     <div>
         <div class="both">
             <div class="input-group">
                 <input type="text" id="adress" class="form-control">
+                <span class="input-group-addon">
+                    <button class="btn btn-warning btn-xs" id="redirectz" value="Redirect">
+                        проложить маршрут
+                    </button>
+
+</span>
                 <span class="input-group-addon">
                     <a href=http://wikimapia.org/<?php if ("on" == "$mobile") {
                         echo "m//";
@@ -208,7 +221,7 @@ if (isset($_GET['xGrads']) && isset($_GET['xMins']) && isset($_GET['yGrads']) &&
         };
         if ("on" == $showmap) {
             if ("off" == $dynmap) {
-                echo "<img  class =\"map-size yandex-image-size\" src=\"http://static-maps.yandex.ru/1.x/?ll=" . $yCoor . "," . $xCoor . "&spn=0.012357,0.00169&pt=" . $yCoor . "," . $xCoor . ",pm2ntl&l=map&size=650,450\">";
+                echo "<img  class =\"map-size yandex-image-size\" src=\"http://static-maps.yandex.ru/1.x/?ll=" . $yCoor . "," . $xCoor . "&spn=0.011057,0.00129&pt=" . $yCoor . "," . $xCoor . ",pm2ntl&l=map&size=650,450\">";
             }
         };
         ?>
