@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TD GeoHelper</title>
     <!--    GEO LOCATION-->
     <script>
@@ -279,4 +279,6 @@ if (isset($_GET['xGrads']) && isset($_GET['xMins']) && isset($_GET['yGrads']) &&
             }));
     }
 </script>
+
+
 </body>
