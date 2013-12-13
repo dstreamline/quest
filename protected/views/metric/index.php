@@ -12,20 +12,18 @@
     <script type="text/javascript">
 
 
+        setTimeout('getCores()', 1000);
 
-        setTimeout('getCores()',1000);
+        function timeouter(parm) {
 
-       function timeouter (parm){
-
-           clearInterval( $('#intervalen').val());
-           var timer = setInterval('getCores()', parm);
-           $('#intervalen').val(timer);
-           console.log (timer);
+            clearInterval($('#intervalen').val());
+            var timer = setInterval('getCores()', parm);
+            $('#intervalen').val(timer);
+            console.log(timer);
         }
 
 
-
-//        setInterval('getCores()', 10000)
+        //        setInterval('getCores()', 10000)
 
 
         function getCores() {
@@ -62,7 +60,7 @@
 
                 window[functionName] = new ymaps.Placemark([info[k].latitude, info[k].longitude], {
 
-                    balloonContentHeader:k
+                    balloonContentHeader: k
                 }, {
 //                    preset: "twirl#yellowStretchyIcon",
 //                    // Отключаем кнопку закрытия балуна.
@@ -70,15 +68,53 @@
 //                    // Балун будем открывать и закрывать кликом по иконке метки.
 //                    hideIconOnBalloonOpen: true
                 });
-                console.log(info[k].latitude);
-                console.log(info[k].longitude);
-                console.log(window[functionName]);
 
 
                 myMap.geoObjects.add(window[functionName]);
 
-                //myMap.geoObjects.add(window[functionName]);
+
             }
+
+
+//            Ьлок построения маршрута
+            <?php if(isset($_GET['search']) && ($_GET['search']==1&& isset($_GET['long'])&& isset($_GET['lang']))|| ($_GET['search']==2 &&isset($_GET['adr'] ))){?>
+            i=0;
+            for (var k in info) {
+                if( i==0){
+                console.log(k);
+                    latitude = info[k].latitude;
+                    longitude = info[k].longitude;
+                    i=1;
+                }
+
+
+            }
+            ymaps.route([
+                [latitude, longitude],
+                // Метро "Третьяковская".
+
+                <?php if ($_GET['search']==1){?>
+                [<?php echo $_GET['long']?>, <?php echo $_GET['lang']?>
+
+                ] <?php }?>
+                <?php if ($_GET['search']==2){?>
+
+                '<?php echo $_GET['adr']?>'
+                <?php }?>
+
+
+            ], {
+                // Автоматически позиционировать карту.
+                mapStateAutoApply: true
+            }).then(function (route) {
+                    myMap.geoObjects.add(route);
+
+                }, function (error) {
+                    alert("Возникла ошибка: " + error.message);
+                });
+
+
+            <?php }?>
 
 
             myMap.options.set('scrollZoomSpeed', 2.5);
@@ -95,21 +131,20 @@
     <div class="col-md-2">
 
 
-        <div class="btn-group"  data-toggle="buttons">
+        <div class="btn-group" data-toggle="buttons">
             <label onclick="timeouter(5000);" class="btn btn-primary  5-sek-option">
                 <input type="radio" name="options" id="option1"> 5 sec
             </label>
-            <label  onclick="timeouter(15000);" class="btn btn-primary">
+            <label onclick="timeouter(15000);" class="btn btn-primary">
                 <input type="radio" name="options" id="option2"> 15sec
             </label>
-            <label onclick="timeouter(60000);"  class="btn btn-primary">
+            <label onclick="timeouter(60000);" class="btn btn-primary">
                 <input type="radio" name="options" id="option3"> 60sec
             </label>
             <label onclick="timeouter(120000);" class="btn btn-primary">
                 <input type="radio" name="options" id="option3"> 2min
             </label>
         </div>
-
 
 
     </div>
