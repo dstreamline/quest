@@ -123,7 +123,7 @@ if (isset($_GET['adres'])) {
                 </div>
                 <div class="col-xs-12 col-sm-3 pb-10">
                     <div class="form-group">
-                        <input type="text" name="adres"class="form-control input-font-size fll" id="exampleInputEmail1" placeholder="или адрес" type="text">
+                        <input type="text" name="adres"class="form-control input-font-size fll" id="exampleInputEmail1" placeholder="или адрес" type="text" value='<?php echo $adres;?>'>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-3 pb-10">
@@ -245,6 +245,7 @@ if (isset($_GET['xGrads']) && isset($_GET['xMins']) && isset($_GET['yGrads']) &&
     if (!isset($xCoor)) {
         $xCoor = NULL;
     } ?>
+   <?php if(empty ($adres)){?>
     <script type="text/javascript">
         var Ecor = '<?php echo $yCoor;?>';
         var Ncor = '<?php echo $xCoor;?>';
@@ -259,6 +260,8 @@ if (isset($_GET['xGrads']) && isset($_GET['xMins']) && isset($_GET['yGrads']) &&
         }
         go();
     </script>
+    <?php }?>
+
     <a href="index.php">Reset</a>
 </div>
 <?php }?>
