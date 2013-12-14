@@ -72,6 +72,7 @@ $mobile = "off";
 $showmap = "off";
 $dynmap = "off";
 $adres = "";
+$khsearch = "off";
 if (isset($_GET['xGrads'])) {
     $xGrads = $_GET['xGrads'] * 1;
 }
@@ -95,6 +96,9 @@ if (isset($_GET['dynmap'])) {
 }
 if (isset($_GET['adres'])) {
     $adres = strip_tags($_GET['adres']);
+}
+if (isset($_GET['khsearch'])) {
+    $khsearch = strip_tags($_GET['khsearch']);
 }
 ?>
 
@@ -171,6 +175,14 @@ if (isset($_GET['adres'])) {
                                             } ?> >
                                         </div>
                                     </div>
+                                    <div class="cl-xs-12">Поиск вне Харькова</div>
+                                    <div class="cl-xs-12">
+                                        <div>
+                                            <input type="checkbox" name="khsearch" <?php if ("on" == $khsearch) {
+                                                echo "checked";
+                                            } ?> >
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -198,7 +210,7 @@ if (isset($_GET['xGrads']) && isset($_GET['xMins']) && isset($_GET['yGrads']) &&
 <script type="text/javascript">
 
     $(document).on("click", "#redirectz", function(e) {
-        window.location.href = '<?php echo Yii::app()->request->getBaseUrl(true);?>/metric?search=<?php if (empty ($adres)) {echo 1;} else {echo 2;}?>&lang=<?php echo $yCoor; ?>&long=<?php echo $xCoor; ?>&adr=<?php echo $adres?>';
+        window.location.href = '<?php echo Yii::app()->request->getBaseUrl(true);?>/metric?search=<?php if (empty ($adres)) {echo 1;} else {echo 2;}?>&lang=<?php echo $yCoor; ?>&long=<?php echo $xCoor; ?>&adr=<?php if ('off' == $khsearch) {echo 'Харьков ';}echo $adres?>';
     });
 </script>
 
