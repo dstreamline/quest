@@ -125,7 +125,7 @@ if (isset($_GET['khsearch'])) {
                         <input type="text" class="form-control mins-size input-font-size fll" maxlength="6" size="6" name="yMins" value='<?= $yMins ?>'>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 pb-10">
+                <div class="col-xs-12 col-sm-3 pb-10 pl-10">
                     <div class="form-group">
                         <input type="text" name="adres"class="form-control input-font-size fll" id="exampleInputEmail1" placeholder="или адрес" type="text" value='<?php echo $adres;?>'>
                     </div>

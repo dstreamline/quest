@@ -5,7 +5,7 @@ class MetricController extends Controller
 
     public function actionIndex()
     {
-        $this->layout = false;
+        //$this->layout = false;
         $criteria = new CDbCriteria;
         $criteria->group = 'user_id';
         $criteria->order = 'time DESC';
@@ -102,17 +102,19 @@ class MetricController extends Controller
             $criteria = new CDbCriteria;
             $criteria->group = 'user_id';
             $criteria->order = 'time DESC';
-            $geos = array();
-            $geolocal = GeoUnique::model()->findAll($criteria);
-            if ($geolocal) {
-                foreach ($geolocal as $geo) {
-                    $geosp[$geo->user_id]['latitude'] = $geo->latitude;
-                    $geosp[$geo->user_id]['longitude'] = $geo->longitude;
-                }
-            }
+            $geolocal = GeoUnique::model()->find($criteria);
+            $geos=array($geolocal->latitude,$geolocal->longitude );
+            echo json_encode($geos, 1);
+//            echo $geolocal->latitude.', '.$geolocal->longitude ;
+//            if ($geolocal) {
+//                foreach ($geolocal as $geo) {
+//                    $geosp[$geo->user_id]['latitude'] = $geo->latitude;
+//                    $geosp[$geo->user_id]['longitude'] = $geo->longitude;
+//                }
+//            }
 
         }
-        echo json_encode($geosp, 1);
+//        echo json_encode($geosp, 1);
     }
 
 }

@@ -11,7 +11,7 @@ return array(
     'defaultController' => 'Helper',
 
     // preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array('log', 'bootstrap'),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -82,6 +82,12 @@ return array(
 				*/
 			),
 		),
+        'bootstrap' => array(
+            'class' => 'ext.yiibooster.components.Bootstrap',
+            'coreCss' => true,
+            'responsiveCss' => true,
+            'yiiCss' => true,
+        ),
 	),
 
 	// application-level parameters that can be accessed

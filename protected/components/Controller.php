@@ -15,11 +15,11 @@ class Controller extends CController
 
             /* @var $baseUrl$theme CTheme */
             $theme = Yii::app()->theme;
-            $cs->registerCssFile($baseUrl . '/extension/bootstrap/css/bootstrap.min.css');
-            $cs->registerScriptFile($baseUrl . '/extension/bootstrap/js/jquery.js');
-            $cs->registerScriptFile($baseUrl . '/extension/bootstrap/js/bootstrap-transition.js');
-            $cs->registerScriptFile($baseUrl . '/extension/bootstrap/js/bootstrap-modal.js');
-            $cs->registerScriptFile($baseUrl . '/extension/bootstrap/js/bootstrap.js');
+//            $cs->registerCssFile($baseUrl . '/extension/bootstrap/css/bootstrap.min.css');
+//            $cs->registerScriptFile($baseUrl . '/extension/bootstrap/js/jquery.js');
+//            $cs->registerScriptFile($baseUrl . '/extension/bootstrap/js/bootstrap-transition.js');
+//            $cs->registerScriptFile($baseUrl . '/extension/bootstrap/js/bootstrap-modal.js');
+//            $cs->registerScriptFile($baseUrl . '/extension/bootstrap/js/bootstrap.js');
             $cs->registerCssFile($baseUrl . '/css/style.css');
            return true;
         }
