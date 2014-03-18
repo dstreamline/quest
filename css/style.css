@@ -153,7 +153,7 @@ body {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     .main-wrapper{
         width: 320px;
         margin:0 auto;
@@ -164,6 +164,25 @@ body {
     {
         width: 320px!important;
         height: 280px!important;
+    }
+
+    .navbar.navbar-fixed-top{
+        margin-bottom: 0px;
+    }
+
+    body{
+        padding: 0;
+    }
+
+    .row-fluid #map{
+        height: 600px!important;
+    }
+
+
+}
+@media screen and (max-width: 600px) {
+    .navbar.navbar-fixed-top{
+        display:none;
     }
 }
 

@@ -40,7 +40,7 @@
                     'class' => 'bootstrap.widgets.TbMenu',
                     'items' => array(
                         array('label' => 'Home', 'url' => '#', 'active' => true),
-                        array('label' => 'Link', 'url' => '#'),
+                        array('label' => 'Codes Generator', 'url' => '#'),
                     ),
                 ),
 
@@ -87,9 +87,9 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+<!--		Copyright &copy; --><?php //echo date('Y'); ?><!-- by My Company.<br/>-->
+<!--		All Rights Reserved.<br/>-->
+<!--		--><?php //echo Yii::powered(); ?>
 	</div>
 
 </div><!-- page -->
