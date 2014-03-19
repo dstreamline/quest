@@ -5,6 +5,14 @@ class MetricController extends Controller
 
     public function actionIndex()
     {
+
+
+        if(Yii::app()->request->isPostRequest)
+        {
+            $geo=GeoOptions::getParm('metric_core');
+            $geo->parameter=Yii::app()->request->getParam('cores', 0);
+            $geo->update();
+        }
         //$this->layout = false;
         $criteria = new CDbCriteria;
         $criteria->group = 'user_id';
