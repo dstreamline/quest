@@ -5,6 +5,7 @@
 
 
         var myMap;
+        var needCentred=true;
         ymaps.ready(init);
         function init () {
             // Создание экземпляра карты и его привязка к контейнеру с
@@ -47,6 +48,7 @@
         }
 
         setInterval('getCores()', 1000);
+
          function getCores() {
 
             $.ajax({
@@ -56,6 +58,12 @@
                 success: function (data) {
                     var info = JSON.parse(data);
                    myPlacemark.geometry.setCoordinates(info);
+
+                    if(needCentred){
+                        if( myMap.setCenter(info)){
+                            needCentred=false;
+                        }
+                    }
                 }
             });
         }
