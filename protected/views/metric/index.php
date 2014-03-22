@@ -74,9 +74,7 @@
                     }
                 }
 
-                if(counter==trafifcInterval){
-
-                    counter=0;
+                if(counter==0){
                     myMap.geoObjects.remove(myRoute);
                     if (info['end'] != "") {
                         ymaps.route(
@@ -90,6 +88,9 @@
                     }
                 }
                 counter++;
+                if( counter>trafifcInterval){
+                    counter=0;
+                }
             }
         });
     }

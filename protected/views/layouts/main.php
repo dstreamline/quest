@@ -32,7 +32,7 @@
 
     $customForm = (Yii::app()->controller->id == 'metric') ? '
                               <form class="navbar-search pull-left" method="post">
-                                  <input type="text" name="cores" class="search-query" value="'.GeoOptions::getParm('metric_core')->parameter.'" placeholder="Aдрес / Координаты">
+                                  <input type="text" name="cores" id="search-query-main" class="search-query" value="'.GeoOptions::getParm('metric_core')->parameter.'" placeholder="Aдрес / Координаты">
                               </form>' : '';
 
     echo CHtml::openTag('div', array('class' => 'bs-navbar-top-example'));

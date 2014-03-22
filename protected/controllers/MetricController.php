@@ -114,7 +114,7 @@ class MetricController extends Controller
             $geos['start']=array($geolocal->latitude,$geolocal->longitude );
             $geos['end']='';
 
-            $geos['end']=(preg_match('/[а-я]/', GeoOptions::getParm('metric_core')->parameter))?'Харьков'. GeoOptions::getParm('metric_core')->parameter:GeoOptions::getParm('metric_core')->parameter;
+            $geos['end']=(preg_match('/[а-я]/', GeoOptions::getParm('metric_core')->parameter))?'Харьков '. GeoOptions::getParm('metric_core')->parameter:GeoOptions::getParm('metric_core')->parameter;
 
 
             echo json_encode($geos, 1);
