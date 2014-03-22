@@ -111,7 +111,12 @@ class MetricController extends Controller
             $criteria->group = 'user_id';
             $criteria->order = 'time DESC';
             $geolocal = GeoUnique::model()->find($criteria);
-            $geos=array($geolocal->latitude,$geolocal->longitude );
+            $geos['start']=array($geolocal->latitude,$geolocal->longitude );
+            $geos['end']='';
+
+            $geos['end']=(preg_match('/[а-я]/', GeoOptions::getParm('metric_core')->parameter))?'Харьков'. GeoOptions::getParm('metric_core')->parameter:GeoOptions::getParm('metric_core')->parameter;
+
+
             echo json_encode($geos, 1);
 //            echo $geolocal->latitude.', '.$geolocal->longitude ;
 //            if ($geolocal) {
