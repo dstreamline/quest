@@ -14,7 +14,11 @@ $this->menu=array(
 
 <h1>Geo Forms</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
+<?php
+echo 'test';
+$this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>
+
+<?php

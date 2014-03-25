@@ -7,18 +7,18 @@
     <meta name="language" content="en"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- blueprint CSS framework -->
-    <!--	<link rel="stylesheet" type="text/css" href="-->
-    <?php //echo Yii::app()->request->baseUrl; ?><!--/css/screen.css" media="screen, projection" />-->
-    <!--	<link rel="stylesheet" type="text/css" href="-->
-    <?php //echo Yii::app()->request->baseUrl; ?><!--/css/print.css" media="print" />-->
+    	<link rel="stylesheet" type="text/css" href="
+    <?php echo Yii::app()->request->baseUrl; ?><!--/css/screen.css" media="screen, projection" />
+   <link rel="stylesheet" type="text/css" href="
+    <?php echo Yii::app()->request->baseUrl; ?><!--/css/print.css" media="print" />
     <!--[if lt IE 8]>
 	<!--<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />-->
-    <![endif]-->
+<!--    <![endif]-->
 
-    <!--	<link rel="stylesheet" type="text/css" href="-->
-    <?php //echo Yii::app()->request->baseUrl; ?><!--/css/main.css" />-->
-    <!--	<link rel="stylesheet" type="text/css" href="-->
-    <?php //echo Yii::app()->request->baseUrl; ?><!--/css/form.css" />-->
+    	<link rel="stylesheet" type="text/css" href="
+    <?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
+    	<link rel="stylesheet" type="text/css" href="
+    <?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -61,27 +61,27 @@
     );
     echo CHtml::closeTag('div');
 
-    //    echo CHtml::openTag('div', array('class' => 'bs-navbar-top-example'));
-    //    $this->widget(
-    //        'bootstrap.widgets.TbNavbar',
-    //        array(
-    //            'brand' => 'Title',
-    //            'brandOptions' => array('style' => 'width:auto;margin-left: 0px;'),
-    //            'fixed' => 'top',
-    //            'htmlOptions' => array('style' => 'position:absolute'),
-    //            'items' => array(
-    //                array(
-    //                    'class' => 'bootstrap.widgets.TbMenu',
-    //                    'items' => array(
-    //                        array('label' => 'Home', 'url' => '#', 'active' => true),
-    //                        array('label' => 'Link', 'url' => '#'),
-    //                        array('label' => 'Link', 'url' => '#'),
-    //                    )
-    //                )
-    //            )
-    //        )
-    //    );
-    //    echo CHtml::closeTag('div');
+//        echo CHtml::openTag('div', array('class' => 'bs-navbar-top-example'));
+//        $this->widget(
+//            'bootstrap.widgets.TbNavbar',
+//            array(
+//                'brand' => 'Title',
+//                'brandOptions' => array('style' => 'width:auto;margin-left: 0px;'),
+//                'fixed' => 'top',
+//                'htmlOptions' => array('style' => 'position:absolute'),
+//                'items' => array(
+//                    array(
+//                        'class' => 'bootstrap.widgets.TbMenu',
+//                        'items' => array(
+//                            array('label' => 'Home', 'url' => '#', 'active' => true),
+//                            array('label' => 'Link', 'url' => '#'),
+//                            array('label' => 'Link', 'url' => '#'),
+//                        )
+//                    )
+//                )
+//            )
+//        );
+//        echo CHtml::closeTag('div');
 
     ?>
 
