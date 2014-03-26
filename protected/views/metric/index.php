@@ -8,7 +8,7 @@
     var myRoute;
     var needCentred = true;
     var counter = 0;
-    var trafifcInterval = 5;
+    var trafifcInterval = 15;
     ymaps.ready(init);
     function init() {
         // Создание экземпляра карты и его привязка к контейнеру с
