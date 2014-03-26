@@ -19,7 +19,8 @@ class MetricController extends Controller
         $criteria->order = 'time DESC';
 
         $geolocal = GeoUnique::model()->findAll($criteria);
-        $this->render('index', array('model' => $geolocal));
+        $geoPoints=GeoPoints::model()->findAll();
+        $this->render('index', array('model' => $geolocal, 'geoPoints'=>$geoPoints));
 
     }
 
@@ -128,6 +129,27 @@ class MetricController extends Controller
 
         }
 //        echo json_encode($geosp, 1);
+    }
+
+    public function actionImportpoins(){
+        if($_FILES){
+
+            GeoPoints::model()->deleteAll();
+
+            $file = fopen($_FILES['filename']['tmp_name'],"r");
+            while(! feof($file))
+            {
+                $string=fgetcsv($file);
+                $geoPoints = new GeoPoints;
+                $geoPoints->cores= $string[3];
+                $geoPoints->street=$string[1];
+                $geoPoints->house=$string[2];
+                $geoPoints->comments=$string[5];
+                $geoPoints->save();
+            }
+            fclose($file);
+        }
+        $this->render('import', array());
     }
 
 }

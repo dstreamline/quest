@@ -7,8 +7,8 @@
     var myMap;
     var myRoute;
     var needCentred = true;
-    var counter=0;
-    var trafifcInterval=5;
+    var counter = 0;
+    var trafifcInterval = 5;
     ymaps.ready(init);
     function init() {
         // Создание экземпляра карты и его привязка к контейнеру с
@@ -47,6 +47,19 @@
         myMap.geoObjects.add(myPlacemark);
 
 
+        <?php $i=0;//        Отрисовка поинтов
+        foreach ($geoPoints as $i=>$points):?>
+        myPlacemark<?php echo $i?> = new ymaps.Placemark([<?php echo $points->cores?>], {
+            iconContent: '<?php echo $points->house?>',
+            hintContent: "<?php echo addslashes($points->comments);?>",
+            balloonContentHeader: "<?php echo addslashes($points->comments);?>"
+        }, {
+
+        });
+        myMap.geoObjects.add(myPlacemark<?php echo $i?>);
+        <?php endforeach;?>
+
+
         ymaps.route(
             [50.00, 36.25],
             { mapStateAutoApply: false }
@@ -74,7 +87,7 @@
                     }
                 }
 
-                if(counter==0){
+                if (counter == 0) {
                     myMap.geoObjects.remove(myRoute);
                     if (info['end'] != "") {
                         ymaps.route(
@@ -88,8 +101,8 @@
                     }
                 }
                 counter++;
-                if( counter>trafifcInterval){
-                    counter=0;
+                if (counter > trafifcInterval) {
+                    counter = 0;
                 }
             }
         });
