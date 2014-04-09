@@ -62,16 +62,39 @@ class FormController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new GeoForm;
+
+
+
+        $model=new GeoForm;
+
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['GeoForm']))
+		if(count($_POST)>0)
 		{
-			$model->attributes=$_POST['GeoForm'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+            $model=new GeoForm;
+            if(isset($_GET['type'])&& $_GET['type']=='block'){
+                $model->type='block';
+                $model->save();
+
+
+
+            $cellsArray=array();
+            $cellsArray=$model->getCellFromBlock($_POST);
+
+            foreach ($cellsArray as $cell){
+                $modelCell=new GeoFormCell();
+                $modelCell->form_id=$model->id;
+                $modelCell->cell_value=$cell;
+                $modelCell->save(false);
+            }
+            }
+
+
+//			$model->attributes=$_POST['GeoForm'];
+//			if($model->save())
+//				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('generator',array(
