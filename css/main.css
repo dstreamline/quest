@@ -267,11 +267,13 @@ div.search-form
 
 .outer-box
 {
-    width: 110px !important;
+    width: 100px !important;
     text-align: center;
-    border: solid 1px;
+    border-radius: 10px;
     float: left;
-    margin: 10px;
+    margin: 5px;
+    background: #e6e6e6;
+    box-shadow:         0px 0px 7px 0px rgba(0, 0, 0, 0.60) !important;
 }
 
 .inner-box
@@ -279,8 +281,11 @@ div.search-form
     width: 60px !important;
     text-align: center;
     display: table;
-    border: solid 1px #ff0000;
-    margin: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background: #b6b6b6;
+    box-shadow:         inset 0px 0px 17px 0px rgba(50, 50, 50, 1);
+
 }
 
 .input-box
@@ -300,7 +305,164 @@ div.search-form
 {
     width: 90px;
 }
-/*
-.btn-orange{background-color: #ffa500;background-image:-moz-linear-gradient(top, #ffcd50, #b47600);background-image:-ms-linear-gradient(top, #deb76d, #b48916);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));background-image:-webkit-linear-gradient(top, #5bc0de, #2f96b4);background-image:-o-linear-gradient(top, #5bc0de, #2f96b4);background-image:linear-gradient(top, #5bc0de, #2f96b4);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);border-color:#2f96b4 #2f96b4 #1f6377;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);filter:progid:dximagetransform.microsoft.gradient(enabled=false);}.btn-info:hover,.btn-info:active,.btn-info.active,.btn-info.disabled,.btn-info[disabled]{background-color:#2f96b4;}
-.btn-orange:active,.btn-info.active{background-color: #8c661d \9;}
-*/
+
+.rem-col
+{
+    width: 90px;
+}
+
+
+.type-selector
+{
+    border-left: solid #C9E0ED 1px;
+    border-right: solid #C9E0ED 1px;
+    border-top: solid #414141 3px;
+    padding-top: 0px;
+    padding-left: 10px;
+    width: 180px;
+    height: 30px;
+    margin-left: 10px;
+    float: left;
+    background: rgba(243,243,243,.85);
+    border-bottom: 1px rgba(243,243,243,.85) solid;
+    box-shadow:          0px 0px 5px 0px rgba(50, 50, 50, 0.24);
+}
+
+.type-selector:hover
+{
+    background: #ffffff;
+    border-top: solid dodgerblue 3px;
+    border-bottom: #ffffff solid 1px;
+}
+
+.selector-up
+{
+    width: 820px;
+    height: 32px;
+}
+.selector-down
+{
+    width: 100%;
+    margin-left: -1px;
+    border-top: solid #C9E0ED 1px;
+    border-bottom: solid #ffffff 1px;
+    display: inline-block;
+    }
+
+.task
+{
+    background: #111111;
+    color: #ffffff;
+}
+
+.selector-part
+{
+    float: left;
+    width: 380px;
+    padding: 10px;
+}
+
+
+.padding
+{
+    padding: 5px;
+
+    margin-right: -1px;
+
+}
+
+.selector-info
+{
+    padding: 15px;
+    border: 1px solid #808080;
+    border-radius: 6px;
+    height: 100%;
+    background: #efefef;
+    box-shadow:          0px 0px 5px 0px rgba(50, 50, 50, 0.24);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.selector-example
+{
+    padding: 15px;
+    background: #262626;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #6a686a;
+    text-align: center;
+
+}
+
+.selector-image
+{
+    margin: 15px;
+    text-align: center;
+    width: 380px;
+    height: 380px;
+    border: 1px solid #9c9c9c;
+    border-radius: 5px;
+    box-shadow:          0px 0px 5px 0px rgba(50, 50, 50, 0.24);
+}
+.low-line
+{
+    width: 100%;
+    border-top: 1px cadetblue solid;
+    float: left;
+}
+.padding-top
+{
+    padding: 4px;
+}
+
+.navigation-border
+{
+    border: solid 1px #d9d5d6;
+    border-radius: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.data-form-border
+{
+    border: solid 1px #d9d5d6;
+    border-radius: 3px;
+    margin-left: 0px!important;
+    background: #eeeeee;
+}
+
+.input-grouped
+{
+    margin-bottom: 10px;
+    vertical-align: middle;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.data-form-options
+{
+    border: solid 1px #d9d5d6;
+    border-radius: 3px;
+    margin-left: 0px!important;
+    background: #ffffff;
+    min-width: 27.5%;
+}
+
+.data-setting
+{
+    text-align: center;
+
+}
+
+.data-background
+{
+    background: #eeeeee;
+    padding: 10px
+}
+@media (max-width: 830px) {
+    .selector-down
+    {
+        width: 820px;
+    }
+
+}

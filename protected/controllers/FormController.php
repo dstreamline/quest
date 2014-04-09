@@ -74,7 +74,7 @@ class FormController extends Controller
 				$this->redirect(array('view','id'=>$model->id));
 		}
 
-		$this->render('create',array(
+		$this->render('generator',array(
 			'model'=>$model,
 		));
 	}
@@ -142,6 +142,7 @@ class FormController extends Controller
 			'model'=>$model,
 		));
 	}
+
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
