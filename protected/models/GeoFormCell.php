@@ -81,7 +81,6 @@ class GeoFormCell extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
 		$criteria->compare('id',$this->id);
 		$criteria->compare('form_id',$this->form_id);
 		$criteria->compare('cell_value',$this->cell_value,true);

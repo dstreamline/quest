@@ -1,4 +1,4 @@
-
+<input type="hidden" name="type" value="block">
 <div class="inp3"><div id="clickDummy" style="float: left"></div>
     <div id="col1" class="outer-box">
         <div id="field1_1" class="inner-box">

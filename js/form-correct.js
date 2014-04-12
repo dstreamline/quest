@@ -1,3 +1,4 @@
+
 $("#submit-order").click(function (e) {
     e.preventDefault();
     $("#order-form").submit();
@@ -5,7 +6,6 @@ $("#submit-order").click(function (e) {
 function factorial(n) {
 return n ? n*factorial(n-1) : 1;
 }
-
 var inputStatus = [0];
 var next = 1;
 var inputNum = 1;
@@ -14,8 +14,7 @@ var buttonColors = ["\u0020", "btn-danger", "btn-warning", "btn-success", "btn-i
 /*    var labelColors = ["\u0020", "label-success", "label-warning", "label-important", "label-info"];*/
 var labelColors = buttonColors;
 /*действия при добавлении строк*/
-$(".add-more").click(function (i) {
-    i.preventDefault();
+$('body').on('click','.add-more', function () {
     var addto = "#field";
     var addRemove = "#field" + (next);
     inputStatus [next] = 0;

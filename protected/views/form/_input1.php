@@ -1,4 +1,4 @@
-<input type="hidden" name="type" value="block">
+<input type="hidden" name="type" value="number">
 <div style="text-align: center;padding: 10px">
     <input name="code" class="input-medium" type="text" placeholder="Код">
 
