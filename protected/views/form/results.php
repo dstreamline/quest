@@ -1,34 +1,32 @@
-<div class="row code-wrapper"><div class="span12">
+<div>
     <?php
     foreach ($model as $key => $cell):?>
-        <div class="code btn " style="float:left" id="<?php echo 'cell_id' . $cell->id ?>"
-             class="<?php echo ($cell->checked == 0) ? 'none' : 'btn-inverse'; ?>">
+        <div class="blah" style="float:left; border: solid #000000 1px" id="<?php echo 'cell_id' . $cell->id ?>"
+             class="<?php echo ($cell->checked == 0) ? 'none' : 'Ok'; ?>">
             <?php echo $cell->cell_value; ?>
         </div>
     <?php endforeach; ?>
 </div>
-</div>
+
 
 <script type="text/javascript">
 
-$('.blah').click(function(){
+$('.code').dblclick(function(){
     $.post( "<?php echo $this->createUrl('form/updatecell', array('id'=>$this->id));?>",
         { id: $(this).id})
         .done(function( data ) {}, "json");
-});
+})
 
     function autoUpdated(){
         $.post( "<?php echo $this->createUrl('form/updater', array('id'=>$this->id));?>",
             { id: "<?php echo $geoModel->id;?>"})
             .done(function( data ) {
                 $.each(JSON.parse(data), function(index, value) {
-
-                    console.log(value);
-                    console.log(index);
+                    $('#'+index).setClass(value);
                 });
             }, "json");
     }
 
-    setInterval(autoUpdated,3000);
+    setInterval(autoUpdated,5000);
 
     </script>
