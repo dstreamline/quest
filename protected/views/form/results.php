@@ -1,3 +1,9 @@
+<?php
+$scriptPath=Yii::app()->AssetManager->publish(Yii::app()->baseUrl.'js/jquery.zclip.js');
+$cs = Yii::app()->getClientScript();
+$cs->registerScriptFile($scriptPath, CClientScript::POS_END);
+?>
+
 <div class="row code-wrapper"><div class="span12">
         <?php
         foreach ($model as $key => $cell): ?>
@@ -34,4 +40,23 @@ $('.code').dblclick(function(){
 
     setInterval(autoUpdated,2000);
 
+
+$(document).ready(function(){
+    $('a#copy-description').zclip({
+        path:'js/ZeroClipboard.swf',
+        copy:$('p#description').text()
+    });
+// The link with ID "copy-description" will copy
+// the text of the paragraph with ID "description"
+    $('a#copy-dynamic').zclip({
+        path:'js/ZeroClipboard.swf',
+        copy:function(){return $('input#dynamic').val();}
+    });
+// The link with ID "copy-dynamic" will copy the current value
+// of a dynamically changing input with the ID "dynamic"
+});
+- See more at: http://www.steamdev.com/zclip/#download
+
+
     </script>
+
