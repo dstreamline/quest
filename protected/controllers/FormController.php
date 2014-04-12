@@ -218,8 +218,10 @@ class FormController extends Controller
 
     public function actionUpdatecell(){
         if(Yii::app()->request->isAjaxRequest ){
+
             $id=Yii::app()->request->getPost('id');
-            $id=(int)$id;
+
+            $id=(int)str_replace('cell_id', '',$id);
              $model= GeoFormCell::model()->find('id=:id', array(':id' => $id));
             $model->checked=1;
             $model->update();
