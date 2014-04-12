@@ -300,9 +300,9 @@ class GeoForm extends CActiveRecord
         ;
         if (($minVal) < 1 ) {$minVal = 1;};
         if ($minVal > count($codes)) {$minVal = count($codes);};
-        if ( ($maxVal > count($codes))){
+        if ( $maxVal==0 || ($maxVal > count($codes))){
             $maxVal = count($codes);
-        };
+        }
         for($i=$minVal;$i<=$maxVal;$i++)
         {
             $codeNum = $i;
