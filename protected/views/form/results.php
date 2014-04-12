@@ -18,6 +18,14 @@ $cs->registerScriptFile($scriptPath, CClientScript::POS_END);
 <script type="text/javascript">
 
 $('.code').dblclick(function(){
+
+    $('.code').zclip({
+        path:'js/ZeroClipboard.swf',
+        copy:$(this)[0].text()
+    });
+
+
+
     $(this).removeClass('btn-success');
     $(this).addClass('btn-inverse');
 
@@ -39,23 +47,6 @@ $('.code').dblclick(function(){
     }
 
     setInterval(autoUpdated,2000);
-
-
-$(document).ready(function(){
-    $('a#copy-description').zclip({
-        path:'js/ZeroClipboard.swf',
-        copy:$('p#description').text()
-    });
-// The link with ID "copy-description" will copy
-// the text of the paragraph with ID "description"
-    $('a#copy-dynamic').zclip({
-        path:'js/ZeroClipboard.swf',
-        copy:function(){return $('input#dynamic').val();}
-    });
-// The link with ID "copy-dynamic" will copy the current value
-// of a dynamically changing input with the ID "dynamic"
-});
-- See more at: http://www.steamdev.com/zclip/#download
 
 
     </script>
