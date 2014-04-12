@@ -255,10 +255,17 @@ class GeoForm extends CActiveRecord
         function recursion($inarray, $readystring, $outputarray, $frozen, $divide, $level,$codeNum,$alphabet)
         {
             $level++;
+            $tempFrozen=$frozen;
             if ($level == $codeNum) {
                 $tempstring = $readystring;
+
                 foreach ($inarray as $key => $value) {
                     ($level > 1 ? $divideFirst = $divide : $divideFirst = '');
+                    $frozen=$tempFrozen;
+                    if (in_array($value,$frozen))
+                    {
+                        unset($frozen[array_search($value,$frozen)]);
+                    }
                     $readystring = ($tempstring . $divideFirst . $value);
                     if(empty($frozen)){
                         array_push($outputarray, $readystring);}
@@ -267,8 +274,7 @@ class GeoForm extends CActiveRecord
             } else {
                 if ((count($inarray) > 1)) {
                     $tempstring = $readystring;
-                    $tempFrozen=$frozen;
-                    foreach ($inarray as $key => $value) {
+                        foreach ($inarray as $key => $value) {
                         $frozen=$tempFrozen;
                         unset($inarray[$key]);
 
