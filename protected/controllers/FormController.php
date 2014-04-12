@@ -29,7 +29,7 @@ class FormController extends Controller
     {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'create'),
+                'actions' => array('index', 'view', 'create', 'results', 'updater', 'updatecell'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -78,19 +78,14 @@ class FormController extends Controller
             $cellsArray = array();
             if (isset($_POST['type']) && $_POST['type'] == 'number') {
                 $cellsArray = $model->generateCodeNumber($_POST);
-            }
-            elseif (isset($_POST['type']) && $_POST['type'] == 'sequence') {
+            } elseif (isset($_POST['type']) && $_POST['type'] == 'sequence') {
                 $cellsArray = $model->generateCodeSequence($_POST);
-            }
-            elseif (isset($_POST['type']) && $_POST['type'] == 'correct') {
+            } elseif (isset($_POST['type']) && $_POST['type'] == 'correct') {
                 $cellsArray = $model->generateCodeCorrect($_POST);
-            }
-            elseif (isset($_POST['type']) && $_POST['type'] == 'block') {
+            } elseif (isset($_POST['type']) && $_POST['type'] == 'block') {
                 $cellsArray = $model->generateCodeBlock($_POST);
-            }
-            else
-            {
-                die;
+            } else {
+                $this->redirect(array('generator'));
             }
             foreach ($cellsArray as $cell) {
                 $modelCell = new GeoFormCell();
@@ -99,11 +94,7 @@ class FormController extends Controller
                 $modelCell->save(false);
 
             }
-
-
-//			$model->attributes=$_POST['GeoForm'];
-//			if($model->save())
-//				$this->redirect(array('view','id'=>$model->id));
+            $this->redirect(array('form/results', 'id' => $model->id));
         }
 
         $this->render('generator', array(
@@ -201,6 +192,41 @@ class FormController extends Controller
             Yii::app()->end();
         }
     }
+
+    public function actionResults($id)
+    {
+        $geoModel = GeoForm::model()->find('id=:id', array(':id' => $id));
+        $this->render('results', array(
+            'geoModel'=>$geoModel,
+            'model' => $geoModel->geoFormCells,
+        ));
+    }
+
+    public function actionUpdater()
+    {
+
+        if(Yii::app()->request->isAjaxRequest ){
+            $geoModel = GeoForm::model()->find('id=:id', array(':id' => Yii::app()->request->getPost('id')));
+            $data=array();
+            foreach ($geoModel->geoFormCells as $cell){
+                $data['cell_id'.$cell->id]=($cell->checked==1)?'Ok':'none';
+            }
+            echo json_encode($data);
+        }
+
+    }
+
+    public function actionUpdatecell(){
+        if(Yii::app()->request->isAjaxRequest ){
+            $id=Yii::app()->request->getPost('id');
+            $id=///cell_id76->76
+             $model= GeoFormCell::model()->find('id=:id', array(':id' => $id));
+            $model->checked=1;
+            $model->update();
+        }
+    }
+
+
 }
 
 

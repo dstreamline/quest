@@ -132,7 +132,7 @@ class GeoForm extends CActiveRecord
         for ($i = $inputs["minVal"]; $i <= $inputs["maxVal"]; $i++) {
             array_push($output, $inputs["code"] . $inputs["divide"] . $i);
         };
-        var_dump($output);
+//        var_dump($output);
         return $output;
     }
 
@@ -213,7 +213,7 @@ class GeoForm extends CActiveRecord
 
     public function generateCodeCorrect($inputs)
     {
-        var_dump($_POST);
+//        var_dump($_POST);
         $frozen = array();
         $codes = array();
         $divide = '';
