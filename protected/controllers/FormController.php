@@ -209,7 +209,7 @@ class FormController extends Controller
             $geoModel = GeoForm::model()->find('id=:id', array(':id' => Yii::app()->request->getPost('id')));
             $data=array();
             foreach ($geoModel->geoFormCells as $cell){
-                $data['cell_id'.$cell->id]=($cell->checked==1)?'Ok':'none';
+                $data['cell_id'.$cell->id]=($cell->checked==1)?'btn-inverse':'btn-success';
             }
             echo json_encode($data);
         }
@@ -219,7 +219,7 @@ class FormController extends Controller
     public function actionUpdatecell(){
         if(Yii::app()->request->isAjaxRequest ){
             $id=Yii::app()->request->getPost('id');
-            $id=///cell_id76->76
+            $id=(int)$id;
              $model= GeoFormCell::model()->find('id=:id', array(':id' => $id));
             $model->checked=1;
             $model->update();

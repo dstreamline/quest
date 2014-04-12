@@ -11,7 +11,7 @@
 
 <script type="text/javascript">
 
-$('.blah').click(function(){
+$('.code').dblclick(function(){
     $.post( "<?php echo $this->createUrl('form/updatecell', array('id'=>$this->id));?>",
         { id: $(this).id})
         .done(function( data ) {}, "json");
@@ -22,8 +22,7 @@ $('.blah').click(function(){
             { id: "<?php echo $geoModel->id;?>"})
             .done(function( data ) {
                 $.each(JSON.parse(data), function(index, value) {
-                    console.log(value);
-                    console.log(index);
+                    $('#'+index).setClass(value);
                 });
             }, "json");
     }
