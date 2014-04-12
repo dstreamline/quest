@@ -45,7 +45,8 @@
                 array(
                     'class' => 'bootstrap.widgets.TbMenu',
                     'items' => array(
-                        array('label' => 'Home', 'url' => '#', 'active' => true),
+                        array('label' => 'Home', 'url' => array('metric/index')),
+                        array('label'=>'Generaror', 'url'=>array('form/create')),
                         // array('label' => 'Codes Generator', 'url' => '#'),
 
                     ),
