@@ -7,9 +7,7 @@ $cs->registerScriptFile($scriptPath, CClientScript::POS_END);
 <div class="row code-wrapper"><div class="span12">
         <?php
         foreach ($model as $key => $cell): ?>
-        <div class="code btn <?php echo ($cell->checked == 0) ? 'btn-success' : 'btn-inverse'; ?>" style="float:left" id="<?php echo 'cell_id' . $cell->id ?>" >
-            <?php echo $cell->cell_value; ?>
-    </div>
+        <div class="code btn <?php echo ($cell->checked == 0) ? 'btn-success' : 'btn-inverse'; ?>" style="float:left" id="<?php echo 'cell_id' . $cell->id ?>" ><?php echo $cell->cell_value; ?></div>
     <?php endforeach; ?>
 </div>
 </div>
@@ -17,21 +15,23 @@ $cs->registerScriptFile($scriptPath, CClientScript::POS_END);
 
 <script type="text/javascript">
 
-$('.code').dblclick(function(){
 
-    $('.code').zclip({
-        path:'js/ZeroClipboard.swf',
-        copy:$(this)[0].text()
+
+$('.code').click(function(){
+
+    $(".code").zclip({
+        path: "/js/ZeroClipboard.swf",
+        copy: function() {
+            return $(this).text();
+        }
     });
-
-
-
     $(this).removeClass('btn-success');
     $(this).addClass('btn-inverse');
 
     $.post( "<?php echo $this->createUrl('form/updatecell', array('id'=>$this->id));?>",
         { id: $(this)[0].id})
         .done(function( data ) {}, "json");
+
 })
 
     function autoUpdated(){
