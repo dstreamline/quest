@@ -228,7 +228,7 @@ class GeoForm extends CActiveRecord
                 $maxVal = ($_POST['maxVal']);
             }
             if ($key == 'alphabet') {
-                $alphabet = (substr($_POST['divide'], 0))-1;
+                $alphabet = (substr($_POST['alphabet'], 0))-1;
             }
             if ($key == 'divide') {
                 $divide = substr($_POST['divide'], 0);
@@ -287,7 +287,7 @@ class GeoForm extends CActiveRecord
                         if (!empty($inarray)){
                         $outputarray = recursion($inarray, $readystring, $outputarray, $frozen, $divide, $level,$codeNum,$alphabet);
                         }
-                            if ($alphabet == 0) ($inarray[$key] = $value);
+                            if ($alphabet == 1) ($inarray[$key] = $value);
                     }
                     return $outputarray;
                 } else {
@@ -300,7 +300,7 @@ class GeoForm extends CActiveRecord
         ;
         if (($minVal) < 1 ) {$minVal = 1;};
         if ($minVal > count($codes)) {$minVal = count($codes);};
-        if (($maxVal >= 0) or ($maxVal > count($codes))){
+        if ( ($maxVal > count($codes))){
             $maxVal = count($codes);
         };
         for($i=$minVal;$i<=$maxVal;$i++)
